@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(cors());
 
 //Databaseconnection
-mongoose.connect("mongodb+srv://testsalon:dami1234@testsalon.uwzfg.mongodb.net/SalonPabaluITP");
+mongoose.connect("mongodb+srv://pabalu:pabalu1234@itpproject.dt2ej.mongodb.net/pabalu");
 
 app.listen(port,(error) =>{
     if(!error){
