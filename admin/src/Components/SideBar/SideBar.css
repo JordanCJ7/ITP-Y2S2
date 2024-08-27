@@ -1,0 +1,26 @@
+.sideBar{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 20px;
+    width: 100%;
+    max-width: 250px;
+    height: 100vh;
+    background: #ffffff;
+}
+.sidebar-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px;
+    padding: 3px 7px;
+    border-radius: 6px;
+    background: #d1d1d1;
+    gap: 20px;
+    cursor: pointer;
+    color: aliceblue;
+}
+.sidebar-item:hover{
+    background-color: rgb(99, 99, 99);
+    color: #fff;
+}
