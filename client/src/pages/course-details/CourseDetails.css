@@ -2,14 +2,19 @@
 
 .coursedetails-container{
     display: flex;
-    
-    
+    height: auto;
 }
 .image-container{
     width: 900px;
-    height: 70vh;
+    height:auto;
+    margin-right: 25px;
+}
+.course-details-left-image{
+    width: 500px;
+    height:500px;
     /* background-color: aqua; */
     margin-right: 25px;
+   
 }
 .right-container{
     /* background-color: aquamarine; */
@@ -18,27 +23,24 @@
     align-items: start;
     gap: 0px;
     width: 100%;
-    padding: 10px;
 
     margin-left: 25px;
 }
 .course-price-container{
     display: flex;
+    font-weight: 800;
 }
 .name-and-rating{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    
+    flex-direction: column;    
 }
 .course-name-tag{
-    font-size: 40px;
+    font-size: 50px;
     font-family: "Poppins", sans-serif;
     font-weight: bold;
 }
 .star-container{
-    margin-top: -40px;
-  
+    margin-top: -60px; 
 }
 .new-price-tag{
     margin-right: 10px;
@@ -49,12 +51,13 @@
     margin-left: 10px;
     font-family: "Poppins", sans-serif;
     font-size: 20px;
+    text-decoration: line-through;
 }
 .description-part{
     display: flex;
     flex-direction: column;
     width: auto;
-    margin: 20px;
+    margin-top: -30px;
     align-items: center;
     
 }
@@ -78,6 +81,7 @@
     border: none;
     font-family: "Poppins", sans-serif;
     font-size: 18px;
+    margin-top: 30px;
     
 }
 .course-details-enroll-button:hover{
@@ -85,4 +89,7 @@
     background-color: #ffffff;transition: 0.5s;
     color: black;
 
+}
+.instructure-details{
+    margin-top: -20px;
 }

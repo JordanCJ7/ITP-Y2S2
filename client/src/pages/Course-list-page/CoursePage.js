@@ -5,7 +5,7 @@ import '../../pages/Course-list-page/CoursePage.css'
 
 export const CoursePage = () => {
 
-    const [allcourses , setAllcourses] = useState([]);
+  const [allcourses , setAllcourses] = useState([]);
 
     const fetchInfo = async() =>{
         await fetch('http://localhost:5000/allcourses')
@@ -23,7 +23,7 @@ export const CoursePage = () => {
 
             {allcourses.map((course,index) =>{
                 return <>
-                <Courses Img={course.image} newprice={course.newprice}  oldprice={course.oldprice} description={course.shortdescription}/>
+                <Courses Img={course.image} newprice={course.newprice}  oldprice={course.oldprice} description={course.shortdescription} id={course._id}/>
                 </>
             })}
   

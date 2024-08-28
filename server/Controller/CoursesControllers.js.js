@@ -1,6 +1,4 @@
 // this is controller
-
-
 const Course = require('../Model/coursesModel'); // Adjust the path if necessary
 
 // Fetch all courses
@@ -87,6 +85,8 @@ const removeCourse = async (req, res) => {
         res.status(500).json({ success: false, message: 'Internal Server Error' });
     }
 };
+
+//get data from db
 
 module.exports = {
     getAllCourses,

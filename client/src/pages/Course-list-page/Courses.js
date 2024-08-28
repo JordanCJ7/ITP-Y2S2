@@ -1,5 +1,6 @@
 import React from "react";
 import './Courses.css'
+import { Link } from 'react-router-dom'
 
 
 function Courses(props){
@@ -40,7 +41,8 @@ function Courses(props){
 
                 <div className="buttonContainer1">
                     <button className="btn2">Enroll Here</button>
-                    <button className="btn2">See more...</button>
+                    <Link to={`/seedetails/${props.id}`} ><button className="btn2">See more...</button></Link>
+                    
                 </div>
 
 

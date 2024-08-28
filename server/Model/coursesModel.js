@@ -14,15 +14,15 @@ const Course = mongoose.model("Course",{
         required:true
     },
     newprice:{
-        type:String,
+        type:Number,
         required:true
     },
     oldprice:{
-        type:String,
+        type:Number,
         required:true
     },
     duration:{
-        type:String,
+        type:Number,
         required:true
     },
     shortdescription:{
