@@ -10,11 +10,12 @@ import CoursesFeedbackPage from './pages/Courses-Feedback-Page/CoursesFeedbackPa
 function App() {
   return (
     <>
-    <Header/>
+
     <BrowserRouter>
+      <Header/>
       <Routes>       
         <Route path='/courselist' element={<CoursePage/>}/>
-        <Route path='/enroll' element={<Enroll/>}/>
+        <Route path='/enroll/:id' element={<Enroll/>}/>
         <Route path='/seedetails/:id' element={<CourseDetailsPage/>}/>
         <Route path='/coursefeedback/' element={<CoursesFeedbackPage/>}/>
       </Routes>

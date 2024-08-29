@@ -2,11 +2,12 @@ import React from 'react'
 import '../EnrollForm/Enroll.css'
 
 function Enroll(){
+
     return (
 <div className="mainPagecontainer">
 
 <div className="enroll-form-container">
-        
+
         <h2 className="enrollnowH2">Enroll Now</h2>  
       
          <form clsaaName="userDetailsForm">

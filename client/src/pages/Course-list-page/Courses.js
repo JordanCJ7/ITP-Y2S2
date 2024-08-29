@@ -38,7 +38,7 @@ function Courses(props){
                 </div>
 
                 <div className="buttonContainer1">
-                    <Link to={`/enroll`} ><button className="btn2">Enroll Here</button></Link>                   
+                    <Link to={`/enroll/${props.id}`} ><button className="btn2">Enroll Here</button></Link>                   
                     <Link to={`/seedetails/${props.id}`} ><button className="btn2">See more...</button></Link>
                     
                 </div>

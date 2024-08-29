@@ -6,7 +6,7 @@ function MenuLinks(props) {
   return (
     <div>
         <div className="headerContainer"></div>
-        <a href={props.url} className="btn1">{props.linkName}</a>
+        <span  className="btn1">{props.linkName}</span>
         
     </div>
   )
