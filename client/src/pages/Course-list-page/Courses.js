@@ -21,26 +21,24 @@ function Courses(props){
                         <p>{props.name}</p>
                     </div>
                     
-                </div>   
+                </div> 
 
-                <div className="description-Container">
-
-                    <div className="course-prices">
-
+                <div className="course-prices">
                         <div className="course-price-new">
                         <p>Rs:{props.newprice}</p>
                         </div>
                         <div className="course-price-old">
                         <p>Rs:{props.oldprice}</p>
-                        </div>
-                                                   
-                    </div>
-                    <p className="description">{props.description}</p>
+                        </div>                                                  
+                    </div>  
 
+                <div className="description-Container">
+             
+                    <p className="description">{props.description}</p>
                 </div>
 
                 <div className="buttonContainer1">
-                    <button className="btn2">Enroll Here</button>
+                    <Link to={`/enroll`} ><button className="btn2">Enroll Here</button></Link>                   
                     <Link to={`/seedetails/${props.id}`} ><button className="btn2">See more...</button></Link>
                     
                 </div>

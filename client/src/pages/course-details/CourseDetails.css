@@ -5,15 +5,18 @@
     height: auto;
 }
 .image-container{
-    width: 900px;
+    width: 700px;
     height:auto;
-    margin-right: 25px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 .course-details-left-image{
     width: 500px;
     height:500px;
     /* background-color: aqua; */
-    margin-right: 25px;
+    margin-right: 15px;
+
    
 }
 .right-container{
@@ -68,6 +71,7 @@
 }
 .course-details-button-container{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;

@@ -5,6 +5,7 @@ import  Header from './components/Header/Header';
 import CoursePage from './pages/Course-list-page/CoursePage';
 import Enroll from './pages/EnrollForm/Enroll';
 import CourseDetailsPage from './pages/course-details/CourseDetailsPage';
+import CoursesFeedbackPage from './pages/Courses-Feedback-Page/CoursesFeedbackPage';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path='/courselist' element={<CoursePage/>}/>
         <Route path='/enroll' element={<Enroll/>}/>
         <Route path='/seedetails/:id' element={<CourseDetailsPage/>}/>
+        <Route path='/coursefeedback/' element={<CoursesFeedbackPage/>}/>
       </Routes>
     </BrowserRouter>
     

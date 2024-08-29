@@ -1,6 +1,6 @@
 import '../course-details/CourseDetails.css';
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 function CourseDetails() {
     
@@ -48,7 +48,9 @@ function CourseDetails() {
                                 <p className='instructure-details'>Instructor Mr:Kalpa Malinda</p>
                             </div>
                             <div className='course-details-button-container'>
-                                <button className='course-details-enroll-button'>Enroll Now</button>
+                                <Link to={`/enroll`} ><button className='course-details-enroll-button'>Enroll Now</button></Link>    
+                                <Link to={`/coursefeedback`}><button className='course-details-enroll-button'>Add Reviw to this course</button></Link>
+                                
                             </div>
                         </div>
                     </div>
