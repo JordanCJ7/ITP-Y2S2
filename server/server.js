@@ -52,6 +52,53 @@ app.post('/removecourse', removeCourse);
 
 
 
+/////////////////////////////////////////////////////////
+
+
+const {
+    getAllService,
+    getServiceById,
+    addService,
+    updateService,
+    removeService,
+} = require("./Controller/ServiceControllers.js"); // Adjust the path if necessary
+
+app.get("/", (req, res) => {
+    res.send("Express App Is Running");
+});
+
+const Storage = multer.diskStorage({
+    destination: './upload/images',
+    filename: (req, file, cb) => {
+        return cb(null, `${file.fieldname}_${Date.now()}${path.extname(file.originalname)}`);
+    }
+});
+const Upload = multer({ storage: storage });
+
+// Create upload endpoint for images
+app.use('/images', express.static('upload/images'));
+app.post("/upload", upload.single('course'), (req, res) => {
+    res.json({
+        success: 1,
+        image_url: `http://localhost:${port}/images/${req.file.filename}`
+    });
+});
+
+// API Routes
+app.get('/allService', getAllService);
+app.post('/Service', getServiceById);
+app.post('/addService', addService);
+app.put('/updateService/:id', updateService);
+app.post('/removeService', removeService);
+
+
+
+
+
+
+
+
+
 app.listen(port,(error) =>{
     if(!error){
         console.log("Server Running on port" , port)

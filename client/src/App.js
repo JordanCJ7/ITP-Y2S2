@@ -2,17 +2,24 @@ import './App.css';
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
 import Home from '../src/pages/Home'
 import  Header from './components/Header/Header';
-import CoursePage from './pages/Course-list-page/CoursePage';
-import Enroll from './pages/EnrollForm/Enroll';
+import Service from './pages/Service/Service';
+import Offer from './pages/Offers/Offer';
+import Payment from './pages/Payment/Payment';
+import Succes from './pages/Payment/Succes';
+import Service_details from './pages/Service_detail/Service_details';
 
 function App() {
   return (
     <>
-    <Header/>
+   
     <BrowserRouter>
+    {/* <Header/> */}
       <Routes>       
-        <Route path='/courselist' element={<CoursePage/>}/>
-        <Route path='/enroll' element={<Enroll/>}/>
+        <Route path='/Service' element={<Service/>}/>
+        <Route path='/Offer' element={<Offer/>}/>
+        <Route path='/Service_details' element={<Service_details/>}/>
+        <Route path='/Payment' element={<Payment/>}/>
+        <Route path='/Succes' element={<Succes/>}/>
       </Routes>
     </BrowserRouter>
     

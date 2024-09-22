@@ -1,0 +1,77 @@
+.main{
+    margin-top: 150px;
+    margin-left: 30%;
+}
+.flex-cont{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    
+    
+}
+.flex-con{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -140px;
+    margin-left: 20px;
+
+}
+.cad{
+    width: 240px;
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: opx 2px 4px rgba(0, 0, 0, 0.3);  
+    
+}
+.cad img{
+    height: 150%;
+    width: 150%;
+    margin-left: 40px;
+    border-radius: 15px;
+    object-fit: cover;
+    overflow: hidden;
+    transition: transform 0.6s ease;
+   
+}
+.cad:hover img{
+    transform:translateY(-20px)
+}
+
+.pah{
+    margin-top: -23%;
+    margin-left: 500px;
+}
+.clock{
+    width: 2.5%;
+    height: 2.5%;
+    object-fit: cover;
+}
+.time{
+    margin-left: 35px;
+    margin-top: -50px;
+}
+
+ .btto{
+    display: inline-block;
+    background-color: rgb(61, 61, 61);
+    color: aliceblue;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    border-radius: 5px;
+    padding: 8px 16px;
+    margin-bottom: 20%;
+}
+.btto:hover{
+    background-color: #c59a77;
+    color: black;
+    cursor: pointer;
+    transition: 0.6s
+} 
+.off{
+    margin-top: -10px;
+}
+.dline{
+    margin-top: -10px;
+}

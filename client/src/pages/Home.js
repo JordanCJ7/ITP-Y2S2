@@ -3,7 +3,7 @@
 function Home() {
  return(
     <>
-        <h1>Huththoooooooooo Frontend Hariiiiiiiiiiiiiiii</h1>
+        <h1></h1>
     </>
  )   
 }

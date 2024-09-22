@@ -1,13 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
-import Admin from './Pages/Admin/Admin'
+import Service_admin from './Pages/Service_admin/Service_admin';
+
 
 function App() {
-  return (
-    <div className="App">
-      <Admin/>
-    </div>
-  );
-}
+  return(
 
-export default App;
+    <>
+    
+       <Service_admin/>
+    
+    </>
+
+  )
+}
+export default App

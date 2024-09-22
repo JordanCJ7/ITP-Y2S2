@@ -1,0 +1,37 @@
+.gif-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gif img{
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+    height: auto;
+    margin-top: 80px;
+}
+.gif h3{
+    margin-left: 113px;
+}
+.success-butt{
+    margin-top: 50px;
+    display: flex;
+    gap: 35px;
+}
+.succes-button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    background-color:rgb(45, 143, 78);
+    color: aliceblue;
+    cursor: pointer;
+    transition: .4s;
+
+
+}
+.succes-button:hover{
+    background: rgb(17, 41, 25);;
+}
+

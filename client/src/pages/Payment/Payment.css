@@ -1,0 +1,78 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+} */
+
+.payment-container{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(231, 216, 197);
+}
+.payment-container .former{
+    width: 850px;
+    padding: 40px;
+    background-color:beige;
+    border-radius: 10px;
+
+}
+.former .pay-row{
+       display: flex;
+       gap: 50px;
+}
+.pay-row .pay-coloumn{
+    flex: 1 1 250px;
+}
+.pay-coloumn .pay-tittle{
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 5px;
+    color: rgb(58, 58, 58);
+
+}
+.pay-coloumn .pay-box{
+    margin: 15px 0;
+
+}
+.pay-box input{
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 6px;
+    font-size: 15px;
+}
+.pay-box label{
+    display: block;
+    margin-bottom: 10px;
+}
+.pay-coloumn .pay-flex{
+    display: flex;
+    gap: 60px;
+}
+.former .pay-button button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(49, 47, 47);
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    font-size: 17px;
+    color: aliceblue;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: .4s;
+
+}
+.former .pay-button button:hover{
+    background: rgb(45, 143, 78);
+}
+
+.pay-coloumn .pay-card img{
+    width: 75px;
+    margin-left: 40px;
+    
+}
